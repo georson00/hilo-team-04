@@ -52,6 +52,7 @@ class Director:
         else:
             print(f"The card is {self.previous_card}.")
             self.guess= input("What will be the next card, Is it higher or lower?\n:H/L \n:")
+
     def do_updates(self):
         """Updates the player's score.
         Args:
@@ -59,6 +60,7 @@ class Director:
         """
         if not self.is_playing:
             return
+
         card = self.hilo.random_select()
 
         print(f"The previous card was {self.previous_card}.\nThe new card is {card}.")
