@@ -10,7 +10,7 @@ class Director:
     """A person who directs the game. 
 
     The responsibility of a Director is to control the sequence of play.
-
+    
     Attributes:
         is_playing (boolean): Whether or not the game is being played.
     """
