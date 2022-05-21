@@ -12,6 +12,7 @@ class Hi_lo:
                     self.cards_list.append(i)
 
     def random_select(self):
+        """To randomly select a card"""
         i = random.choice(self.cards_list) 
         self.cards_list.remove(i)
         return i
