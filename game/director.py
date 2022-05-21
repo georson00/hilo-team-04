@@ -53,7 +53,7 @@ class Director:
             print(f"The card is {self.previous_card}.")
             self.guess= input("What will be the next card, Is it higher or lower?\n:H/L \n:")
         else:
-            print("Please select a correct response. 'n/N' or 'Y/y'") 
+            print("Please select a correct response: 'n/N' or 'Y/y'") 
             self.is_playing = False   
 
     def do_updates(self):
