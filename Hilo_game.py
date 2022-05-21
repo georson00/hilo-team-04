@@ -7,13 +7,13 @@ class Hi_lo:
         self.cards_list = []
         
     def create_cards(self):
-            """To create the cards that will be used in the game."""
+            """To create the cards that will be used in the game"""
             for i in range(4):
                 for i in range(1,14):
                     self.cards_list.append(i)
 
     def random_select(self):
-        """To randomly select a card"""
+        """TO randomly select a new card"""
         i = random.choice(self.cards_list) 
         self.cards_list.remove(i)
         return i

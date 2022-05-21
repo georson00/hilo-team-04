@@ -49,12 +49,14 @@ class Director:
         if playing.lower() =="n":
             self.is_playing = False
             print("Thank you for playing.")
+
         elif playing.lower() =="y":
             print(f"The card is {self.previous_card}.")
             self.guess= input("What will be the next card, Is it higher or lower?\n:H/L \n:")
+
         else:
-            print("Please select a correct response: 'n/N' or 'Y/y'") 
-            self.is_playing = False   
+            print("Incorrect reponse selected. Please select a correct response: y or n") 
+            self.is_playing = (playing == "y")   
 
     def do_updates(self):
         """Updates the player's score.
