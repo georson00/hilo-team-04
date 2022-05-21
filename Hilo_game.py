@@ -7,6 +7,7 @@ class Hi_lo:
         self.cards_list = []
         
     def create_cards(self):
+            """To create the cards that will be used in the game."""
             for i in range(4):
                 for i in range(1,14):
                     self.cards_list.append(i)
